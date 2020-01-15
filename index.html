@@ -74,20 +74,7 @@
         ul.empty();
         var search = document.getElementById("search").value;
         q = search;
-        
 
-        
-//
-//        $.ajax({
-//            url: "https://translate.yandex.net/api/v1.5/tr.json/detect",
-//            type: "POST",
-//            key: "trnsl.1.1.20200115T191937Z.274a609f40ffdeec.1efb3ae6a0a21133eaa6e9f6ec8ef69588da9777",
-//            text:"hi",
-//            contentType: "application/json",
-//            callback: function(response){
-//                console.log(response)
-//            }
-//        });
         
         apiKey = "trnsl.1.1.20200115T191937Z.274a609f40ffdeec.1efb3ae6a0a21133eaa6e9f6ec8ef69588da9777";
         text = q;
@@ -98,15 +85,12 @@
             url: url,
             dataType: "xml",
             success: function(response){
-//                parser = new DOMParser();
-//                xmlDoc = parser.parseFromString(response, "text/xml");
-//                console.log(xmlDoc)
-                
+
                 var s = new XMLSerializer();
                 var newXmlStr = s.serializeToString(response);
                 
                 var lang = newXmlStr.substring(69, 71);
-//                console.log(lang);
+
                 $('#lang').html("Detected Language: "+lang)
                 
                 
@@ -138,7 +122,6 @@
                                 desc = r[i].kwic;
                                 if(lang!="en"){
                                     title = translateBack(apiKey, title, lang);
-//                                    console.log(tTitle);
                                     desc = translateBack(apiKey, desc, lang);
                                 }
                                 
