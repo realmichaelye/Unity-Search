@@ -1,5 +1,5 @@
 
-# Unity Search (Beta)
+# [Unity Search (Beta)](https://realmichaelye.github.io/Unity-Search/)
 **Mission:**  Unity Search aims to bridge the Information Gap between English speakers and the rest of the world.
 
 **Problem:**  Information is extremely scarce and often low-quality for Non-English speakers. For example, suppose you want to study the philosophy of Stoicism. When searching the keyword "stoicism" on google, there are over 6,050,000 results. However, when you search the exact same word in Tamil (spoken by over 70 million people), it only yields 1,960 results. And most of them are dictionary definitions, not high quality articles. This causes an information gap between English speakers and the rest of the world, which affects over 6.5 billion people - 86.8% of the total population cannot speak English! (according to  [Cambridge University Press](https://books.google.co.uk/books?hl=en&id=d6jPAKxTHRYC&redir_esc=y))
